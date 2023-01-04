@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add data</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      /* display: flex; */
+      align-items: center;
+      background: linear-gradient(
+        to bottom right,
+        rgb(248, 7, 7),
+        rgb(226, 105, 235)
+      );
+      text-align: center;
+    }
+    /* style the form */
+    #form {
+      background-color: #fff;
+      width: 500px;
+      height: max-content;
+      margin: 50px auto;
+      padding: 30px 20px;
+      box-shadow: 4px 6px 30px rgba(15, 15, 15, 0.5);
+      border-radius: 14px;
+    }
+
+    /* style the form control class */
+    .form-control {
+      text-align: left;
+      margin-bottom: 25px;
+      margin-top: 40px;
+    }
+
+    /* style form control label */
+    .form-control label {
+      display: inline;
+      margin-bottom: 9px;
+      font-size: 22px;
+    }
+    /* style form control inpyt */
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+      border: 2px solid #777;
+      border-radius: 5px;
+      padding: 10px;
+      display: inline;
+      width: 95%;
+      font-family: "Times New Roman", Times, serif;
+    }
+    #btn {
+      background-color: rgb(58, 158, 240);
+      height: 40px;
+      border: none;
+      width: 90px;
+      color: black;
+      font-size: larger;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      box-shadow: 4px 6px 30px rgba(207, 206, 206, 0.5);
+    }
+    #btn:hover {
+      background-color: rgb(12, 107, 196);
+    }
+    #subbtn {
+      background-color: rgb(58, 158, 240);
+      height: 40px;
+      width: 90px;
+      border: none;
+      color: black;
+      font-size: larger;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      box-shadow: 4px 6px 30px rgba(207, 206, 206, 0.5);
+
+      margin-left: 311px;
+      margin-top: 12px;
+    }
+    #subbtn:hover {
+      background-color: rgb(12, 107, 196);
+    }
+  </style>
+  <body>
+    <!-- Create form -->
+    <form id="form">
+      <!-- Details -->
+      <div class="form-control">
+        <label for="name" id="label-name"> Customer Name </label>
+
+        <!-- Input type text -->
+        <input type="text" id="name" placeholder="Enter name here" />
+      </div>
+
+      <div class="form-control">
+        <label for="email" id="label-email"> Email </label>
+
+        <!-- Input type email -->
+        <input type="email" id="email" placeholder="Enter email here" />
+      </div>
+
+      <div class="form-control">
+        <label for="address" id="label-address"> Address</label>
+
+        <!-- Input type address -->
+        <input type="text" id="address" placeholder="Enter address here" />
+      </div>
+
+      <div class="form-control">
+        <label for="contact" id="label-contact"> Contact </label>
+
+        <!-- Input type contact -->
+        <input type="text" id="contact" placeholder="Enter contact here" />
+      </div>
+
+      <div class="form-control">
+        <label for="shopname" id="label-shopname"> Shop Name</label>
+
+        <!-- Input type shopname -->
+        <input type="text" id="shopname" placeholder="Enter shop Name here" />
+      </div>
+      <div>
+        <button id="btn" type="button" value="back">Back</button>
+
+        <button id="subbtn" type="button" value="submit">ADD</button>
+      </div>
+    </form>
+  </body>
+
+  <script>
+    document.getElementById("btn").addEventListener("click", back);
+
+    function back() {
+      window.location.replace((src = "index.html"));
+    }
+  </script>
+</html>

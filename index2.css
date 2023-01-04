@@ -1,0 +1,19 @@
+.manu{
+    display: inline-block;
+    padding: 20px 144px;;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main_manu
+{
+    border-bottom: 2px solid #ddd  ;
+    background-color: rgba(44, 44, 43, 0.987);
+
+}
+.manu:hover{
+
+    background-color: rgb(0, 0, 0);
+}
+

@@ -1,0 +1,272 @@
+<html>
+    <head>
+       <title>Search bar</title> 
+       <style>
+           table,th,td{
+                border: 1px solid #000000;
+                border-collapse: collapse;  
+               padding: 10px;
+              
+           }
+           th{
+           text-align: left;
+           background: #464244;;
+           font-size: 24px;
+           font-family: sans-serif;
+           
+          
+           color: white;
+           
+           }
+           td{
+            background-color: #d5c7c7;
+            color: black;
+            font-size: 19px;
+          
+           }
+           body {
+            height: 100vh; 
+            background: linear-gradient(
+              to top left,
+              rgb(240, 150, 100),
+              rgb(255, 90, 125)
+            );
+          }
+          .form-control input,
+          .form-control select,
+          .form-control textarea {
+            border: 2px solid #161819 ;
+            border-radius: 5px;
+            padding: 10px;
+            display: inline;
+            width: 85%;
+            font-family: "Times New Roman", Times, serif;
+          }
+          .form-control label {
+            display: block;
+            margin-bottom: 9px;
+            font-size: 22px;
+          }
+          .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+            margin-top: 27px;
+      
+            /* border: whitesmoke; */
+          }
+          #form {
+            background-color: rgb(243, 132, 132);
+            width: 500px;
+            height: max-content;
+            margin: 30px auto;
+            padding: 0px 20px;
+            box-shadow: 4px 6px 30px rgba(15, 15, 15, 0.5);
+            border-radius: 14px;
+            display: block;
+            top: 0px;
+            right: 18px;
+            float: left;
+            background-color: #525050;
+          }
+          #myinput{
+            background-color: azure;
+            display: block;
+          }
+          #btn {
+            background-color: #5fc5e7;
+            height: 40px;
+            border: none;
+            width: 90px;
+            color: black;
+            font-size: 24px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 4px 6px 30px rgba(207, 206, 206, 0.5);
+            margin-top: 30px;
+           margin-left: 589px;
+           margin-bottom: 20px;
+          }
+     
+       </style>
+    </head>
+    <body>  
+        
+
+        
+            <form id="form">
+            
+        <div class="form-control">
+            <label for="search" id="label-search"></label>
+            <input class="srch" type="text" name="" id="myinput" placeholder="Search here...." onkeyup="searchfun() ">
+        </div>
+    </form>
+    <!-- <form> -->
+
+        <!-- <div > -->
+            
+            <table style="width: 100%;" id="mytable" class="sss">
+                <tr> 
+                    <th> Customer Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Contact</th>
+                    <th>Shop name</th>
+                </tr>
+                <tr>
+                    <td>Ravi</td>
+                    <td>ravibhaore@gmai.com</td>
+                    <td>indore</td>
+                    <td>73657843</td>
+                    <td>....</td>
+                </tr>
+                <tr>
+                    <td>Ravi</td>
+                    <td>ravibhaore@gmai.com</td>
+                    <td>indore</td>
+                    <td>73657843</td>
+                    <td>....</td>
+                </tr>
+                <tr>
+                    <td>Ravi</td>
+                    <td>ravibhaore@gmai.com</td>
+                    <td>indore</td>
+                    <td>73657843</td>
+                    <td>....</td>
+                </tr>
+                <tr>
+                    <td>Ravi</td>
+                    <td>ravibhaore@gmai.com</td>
+                    <td>indore</td>
+                    <td>73657843</td>
+                    <td>....</td>
+                </tr>
+            <tr>
+                <td>rajj</td>
+                <td>raj@gmai.com</td>
+                <td>bhopal</td>
+                <td>73657843</td>
+                <td>.....</td>
+            </tr>
+            <tr>
+                <td>rajesh</td>
+                <td>rajesh@gmai.com</td>
+                <td>indore</td>
+                <td>73657843</td>
+                <td>....</td>
+            </tr>
+            <tr>
+                <td>rajj</td>
+                <td>raj@gmai.com</td>
+                <td>bhopal</td>
+                <td>73657843</td>
+                <td>.....</td>
+            </tr>
+            <tr>
+                <td>rajesh</td>
+                <td>rajesh@gmai.com</td>
+                <td>indore</td>
+                <td>73657843</td>
+                <td>....</td>
+            </tr>
+            <tr>
+                <td>kamlesh</td>
+                <td>kammui@gmai.com</td>
+                <td>indore</td>
+                <td>73657843</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>Ravi</td>
+                <td>ravibhaore@gmai.com</td>
+                <td>indore</td>
+                <td>73657843</td>
+                <td>....</td>
+            </tr>
+            <tr>
+                <td>Ravi</td>
+                <td>ravibhaore@gmai.com</td>
+                <td>indore</td>
+                <td>73657843</td>
+                <td>....</td>
+            </tr>
+            <tr>
+                <td>Ravi</td>
+                <td>ravibhaore@gmai.com</td>
+                <td>indore</td>
+                <td>73657843</td>
+                <td>....</td>
+            </tr>
+            <tr>
+                <td>Ravi</td>
+                <td>ravibhaore@gmai.com</td>
+                <td>indore</td>
+                <td>73657843</td>
+                <td>....</td>
+            </tr>
+        <tr>
+            <td>rajj</td>
+            <td>raj@gmai.com</td>
+            <td>bhopal</td>
+            <td>73657843</td>
+            <td>.....</td>
+        </tr>
+        <tr>
+            <td>rajesh</td>
+            <td>rajesh@gmai.com</td>
+            <td>indore</td>
+            <td>73657843</td>
+            <td>....</td>
+        </tr>
+        <tr>
+            <td>rajj</td>
+            <td>raj@gmai.com</td>
+            <td>bhopal</td>
+            <td>73657843</td>
+            <td>.....</td>
+        </tr>
+        <tr>
+            <td>rajesh</td>
+            <td>rajesh@gmai.com</td>
+            <td>indore</td>
+            <td>73657843</td>
+            <td>....</td>
+        </tr>
+        <tr>
+            <td>kamlesh</td>
+            <td>kammui@gmai.com</td>
+            <td>indore</td>
+            <td>73657843</td>
+            <td>...</td>
+        </tr>
+        </table>
+    <!-- </div> -->
+    <!-- </form> -->
+    <button id="btn" type="button" value="back">Back</button>
+        <script>
+            function searchfun(){
+let filter= document.getElementById('myinput').value.toUpperCase();
+let mytable =document.getElementById('mytable');
+let tr =mytable.getElementsByTagName('tr');
+for( var i=0; i<tr.length; i++){
+    let td = tr[i].getElementsByTagName('td')[0];
+    if(td){
+        let textvalue =td.textvalue=td.textContent || td.innerHTML;
+        if(textvalue.toUpperCase().indexOf(filter)> -1){
+            tr[1].style.display="";
+
+        }
+        else{
+            tr[i].style.display="none";
+        }
+    }
+}
+            }
+        </script>
+        <script>
+            document.getElementById("btn").addEventListener("click", back);
+        
+            function back() {
+              window.location.replace((src = "index.html"));
+            }
+          </script>
+    </body>
+</html>
